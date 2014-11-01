@@ -58,7 +58,7 @@ int main(int argc, char** argv){
 
 long long wordHash(const std::string& s){
 	int primes[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101};
-	std::size_t hash = 1;
+	long long hash = 1;
 	for(char c : s)
 		hash *= primes[c - 'a'];
 	return hash;
